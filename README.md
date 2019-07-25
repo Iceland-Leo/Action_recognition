@@ -14,5 +14,12 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 Also, you need to install `ffmpeg` to process vedio.
 
-## Data ##
-Download the [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) dataset. Then extract them to `data/`.
+## Data Preprocessing ##
+Download the [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) dataset. Then extract them to `data/`.  
+Download the [Inception_v3](https://pan.baidu.com/s/1X8BpCssc1SwCYa7Lkn4UzQ) model pretrained on ImageNet with the verification code **ej0f** to `inception_v3/`.  
+You need to execute the following steps successively to implement the data preprocessing:  
+- In `data/` directory, you need to run `move_files.py` to split dataset into train and test, and move them to the appropriate folder.  
+- Then, in the same directory, you need to run `extract_files.py` to extract useful vedio information, such as vedio name, label, number of frames and so on.  
+- finally, in the project root directory, you need to run `extract_cnn_features.py` to extract cnn_feature of each images.
+
+## Training ##
