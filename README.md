@@ -23,3 +23,9 @@ You need to execute the following steps successively to implement the data prepr
 - finally, in the project root directory, you need to run `extract_cnn_features.py` to extract cnn_feature of each images.
 
 ## Training ##
+You can adjust the parameters to specify the categories to be trained, and if you have sufficient computing resources, ignore the parameters for this problem. You can simply run `train_lstm.py` to train the model.  
+
+## Test ##  
+You can simply run `demo.py` to test your model. By the way, you should select a model file to initialize model parameters. You can simply assign the path of the model file to the corresponding parameter.  
+
+## Result ##
