@@ -10,7 +10,8 @@ python >= 3.5
 tensorflow >= 1.12  
 In addition, please add the project folder to PYTHONPATH and `pip install` the following packages:  
 - `glob`  
-- `tqdm`  
+- `tqdm`
+
 Also, you need to install `ffmpeg` to process vedio.
 
 ## Data ##
