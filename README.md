@@ -15,3 +15,4 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 Also, you need to install `ffmpeg` to process vedio.
 
 ## Data ##
+Download the [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) dataset. Then extract them to `data/`.
