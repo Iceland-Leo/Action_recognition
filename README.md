@@ -19,7 +19,7 @@ Download the [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) dataset. Then ex
 Download the [Inception_v3](https://pan.baidu.com/s/1X8BpCssc1SwCYa7Lkn4UzQ) model pretrained on ImageNet with the verification code **ej0f** to `inception_v3/`.  
 You need to execute the following steps successively to implement the data preprocessing:  
 - In `data/` directory, you need to run `move_files.py` to split dataset into train and test, and move them to the appropriate folder.  
-- Then, in the same directory, you need to run `extract_files.py` to extract useful vedio information, such as vedio name, label, number of frames and so on.  
+- Then, in the same directory, you need to run `extract_files.py` to extract useful vedio information, such as video name, label, number of frames and so on.  
 - finally, in the project root directory, you need to run `extract_cnn_features.py` to extract cnn_feature of each images.
 
 ## Training ##
@@ -29,3 +29,4 @@ You can adjust the parameters to specify the categories to be trained, and if yo
 You can simply run `demo.py` to test your model. By the way, you should select a model file to initialize model parameters. You can simply assign the path of the model file to the corresponding parameter.  
 
 ## Result ##
+I randomly selected 10 classes in UCF101 dataset for training. Using the test dataset to test the model, the accuracy of video action prediction can reach more than 90%.
